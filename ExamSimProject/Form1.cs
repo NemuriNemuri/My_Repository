@@ -46,7 +46,8 @@ namespace ExamSimProject
             if (!(string.Equals("Email or Username", userIdTextField.Text) || string.Equals("Password", passwordField.Text)))
             {
                 MessageBox.Show("You have successfully logged in!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } else
+            }
+            else
             {
                 MessageBox.Show("Please enter your credentials.", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

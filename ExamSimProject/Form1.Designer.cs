@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            registerLink = new LinkLabel();
             loginButton = new Button();
             passwordField = new TextBox();
             passwordLabel = new Label();
             userIdTextField = new TextBox();
             userIdLabel = new Label();
             pictureBox1 = new PictureBox();
-            registerLink = new LinkLabel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -55,14 +55,26 @@
             panel1.Size = new Size(312, 426);
             panel1.TabIndex = 0;
             // 
+            // registerLink
+            // 
+            registerLink.AutoSize = true;
+            registerLink.LinkBehavior = LinkBehavior.HoverUnderline;
+            registerLink.Location = new Point(120, 383);
+            registerLink.Name = "registerLink";
+            registerLink.Size = new Size(47, 15);
+            registerLink.TabIndex = 6;
+            registerLink.TabStop = true;
+            registerLink.Text = "Sign up";
+            registerLink.LinkClicked += registerLink_LinkClicked;
+            // 
             // loginButton
             // 
             loginButton.BackColor = Color.SkyBlue;
             loginButton.FlatStyle = FlatStyle.Flat;
             loginButton.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            loginButton.Location = new Point(96, 275);
+            loginButton.Location = new Point(96, 293);
             loginButton.Name = "loginButton";
-            loginButton.Size = new Size(100, 65);
+            loginButton.Size = new Size(100, 50);
             loginButton.TabIndex = 5;
             loginButton.Text = "Login";
             loginButton.UseVisualStyleBackColor = false;
@@ -120,18 +132,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // registerLink
-            // 
-            registerLink.AutoSize = true;
-            registerLink.LinkBehavior = LinkBehavior.HoverUnderline;
-            registerLink.Location = new Point(120, 383);
-            registerLink.Name = "registerLink";
-            registerLink.Size = new Size(47, 15);
-            registerLink.TabIndex = 6;
-            registerLink.TabStop = true;
-            registerLink.Text = "Sign up";
-            registerLink.LinkClicked += registerLink_LinkClicked;
             // 
             // LoginForm
             // 
