@@ -30,6 +30,7 @@ namespace ExamSimProject
             if (passwordField.Text == "Password")
             {
                 passwordField.Text = "";
+                passwordField.PasswordChar = '*';
             }
         }
 
@@ -38,6 +39,7 @@ namespace ExamSimProject
             if (string.IsNullOrEmpty(passwordField.Text))
             {
                 passwordField.Text = "Password";
+                passwordField.PasswordChar = '\0';
             }
         }
 
