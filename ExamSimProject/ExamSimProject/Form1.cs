@@ -9,43 +9,9 @@ namespace ExamSimProject
             InitializeComponent();
         }
 
-        public void RemoveUserIdPlaceHolder(object sender, EventArgs e)
-        {
-            if (userIdTextField.Text == "Email or Username")
-            {
-                userIdTextField.Text = "";
-            }
-        }
-
-        public void AddUserIdPlaceHolder(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(userIdTextField.Text))
-            {
-                userIdTextField.Text = "Email or Username";
-            }
-        }
-
-        public void RemovePasswordPlaceHolder(object sender, EventArgs e)
-        {
-            if (passwordField.Text == "Password")
-            {
-                passwordField.Text = "";
-                passwordField.PasswordChar = '*';
-            }
-        }
-
-        public void AddPasswordPlaceHolder(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(passwordField.Text))
-            {
-                passwordField.Text = "Password";
-                passwordField.PasswordChar = '\0';
-            }
-        }
-
         private void loginButton_Click(object sender, EventArgs e)
         {
-            if (!(string.Equals("Email or Username", userIdTextField.Text) || string.Equals("Password", passwordField.Text)))
+            if (!(string.Equals(string.Empty, userIdTextField.Text) || string.Equals(string.Empty, passwordField.Text)))
             {
                 MessageBox.Show("You have successfully logged in!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
