@@ -63,9 +63,39 @@ namespace ExamSimProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DashboardBgImage {
+            get {
+                object obj = ResourceManager.GetObject("DashboardBgImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loginBgImage {
             get {
                 object obj = ResourceManager.GetObject("loginBgImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap registButtonBg {
+            get {
+                object obj = ResourceManager.GetObject("registButtonBg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap registerBgImage {
+            get {
+                object obj = ResourceManager.GetObject("registerBgImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
